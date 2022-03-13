@@ -49,7 +49,14 @@ public class TestUserRegistration {
 		assertEquals(true,ur.validPassword("12A@asdewrt") );
 	}
 	
-	
+	/**
+	 * In this case,it tests each email id with regex pattern.
+	 */
+	@Test
+	public void testValidSampleEmailid() {
+		for(int i=0;i < validemail.length;i++)
+		assertEquals(true,ur.validEmailId(validemail[i]) );
+	}
 	
 	
 }
