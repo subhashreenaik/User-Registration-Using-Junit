@@ -42,7 +42,7 @@ public class UserRegistration {
 	 
 	public  boolean validEmailId(String emailid) {
 			
-			Pattern p = Pattern.compile("[a-z]{3,}(((.?)[+-]*(_?)*[a-z0-9]*){2,})*@[a-z0-9]{1,}.[a-z]{2,}(.[a-z]*{2,})*");
+			Pattern p = Pattern.compile("^[a-zA-Z0-9]+([._+-]*[0-9A-Za-z]+)*@[a-zA-Z0-9]+.[a-zA-Z]{2,}([.][a-z]{2,})?$");
 			Matcher m = p.matcher(emailid);
 			boolean b = m.matches(); 
 			
