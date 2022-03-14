@@ -9,6 +9,7 @@ public class EmotionCheck {
 		}
 		else {
 			return "Entry Failed";
+			
 		}
 	}
 }
